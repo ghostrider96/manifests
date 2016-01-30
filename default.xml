@@ -19,13 +19,13 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
            
-<remote  name="cm"
-	       fetch="git://github.com/CyanogenMod"
-	       revision="cm-13.0" />
+  <remote  name="cm"
+	   fetch="git://github.com/CyanogenMod"
+	   revision="cm-13.0" />
 
   <remote  name="omni"
-	       fetch="git://github.com/omnirom"
-	       revision="android-6.0" />
+	   fetch="git://github.com/omnirom"
+	   revision="android-6.0" />
 
   <remote  name="tos"
            fetch="https://github.com/Typical-OS"
@@ -42,6 +42,9 @@
  <!-- Begin CarbonROM -->
   <project path="vendor/chromium" name="CarbonROM/android_vendor_chromium" remote="carbon" revision="cr-4.0" />
 
+ <!-- SlimRoms -->
+  <project path="frameworks/opt/cards" name="SlimRoms/frameworks_opt_cards" remote="github" revision="mm6.0" />
+
 <!-- BEGIN TOS -->
   <project path="build" name="android_build" groups="pdk" remote="tos" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -55,7 +58,7 @@
   <project path="vendor/tos" name="android_vendor_tos" remote="tos" />
   <project path="vendor/cmsdk" name="cm_platform_sdk" remote="tos" /> 
   
-  <!-- OTA -->
+<!-- OTA -->
   <project path="packages/apps/TOSOTA" name="packages_apps_TOSOTA" remote="tos" />
   
 <!-- Documentation -->
@@ -63,7 +66,7 @@
      <copyfile src="ota_conf" dest="ota_conf" />
   </project>
   
-  <!-- END TOS -->
+<!-- END TOS -->
 
 <!-- UB-TC -->
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="aarch64-linux-android-4.9" remote="ubertc" revision="master" />
