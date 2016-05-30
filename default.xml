@@ -31,7 +31,7 @@
   <project path="packages/apps/Settings" name="Typical-OS/android_packages_apps_Settings" groups="pdk-fs" revision="tos-mm" />
   <project path="tos" name="Typical-OS/tos" remote="github" revision="tos-mm" />
   <project path="vendor/tos" name="Typical-OS/android_vendor_tos" revision="tos-mm" />
-  <project path="vendor/cmsdk" name="Typical-OS/cm_platform_sdk" remote="tos-mm" /> 
+  <project path="vendor/cmsdk" name="Typical-OS/cm_platform_sdk" revision="tos-mm" /> 
 <!-- END TOS -->
 
 <!-- BEGIN CYANOGENMOD -->
