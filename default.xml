@@ -13,7 +13,7 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
-  <remote  name="tos"
+  <remote  name="Typical-OS"
            fetch="https://github.com/Typical-OS"
            revision="tos-mm" />
 
