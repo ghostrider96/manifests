@@ -14,8 +14,7 @@
            fetch="ssh://git@github.com" />
 
   <remote  name="Typical-OS"
-           fetch="https://github.com/Typical-OS"
-           revision="tos-mm" />
+           fetch="https://github.com/Typical-OS" />
 
   <default revision="refs/heads/cm-13.0"
            remote="github"
