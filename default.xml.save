@@ -14,8 +14,7 @@
            fetch="ssh://git@github.com" />
 
   <remote  name="Typical-OS"
-           fetch="https://github.com"
-           revision="tos-mm" />
+           fetch="https://github.com/Typical-OS" />
 
   <default revision="refs/heads/cm-13.0"
            remote="github"
@@ -29,9 +28,9 @@
   <project path="android" name="Typical-OS/android" revision="tos-mm" />
   <project path="frameworks/base" name="Typical-OS/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" revision="tos-mm" />
   <project path="packages/apps/Settings" name="Typical-OS/android_packages_apps_Settings" groups="pdk-fs" revision="tos-mm" />
-  <project path="tos" name="Typical-OS/tos" remote="github" revision="tos-mm" />
+  <project path="tos" name="Typical-OS/tos" remote="git revision="tos-mm" />
   <project path="vendor/tos" name="Typical-OS/android_vendor_tos" revision="tos-mm" />
-  <project path="vendor/cmsdk" name="Typical-OS/cm_platform_sdk" remote="tos-mm" /> 
+  <project path="vendor/cmsdk" name="Typical-OS/cm_platform_sdk0" remote="tos-mm" /> 
 <!-- END TOS -->
 
 <!-- BEGIN CYANOGENMOD -->
