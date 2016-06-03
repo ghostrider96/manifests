@@ -22,3 +22,13 @@ For more information on this Github Organization and how it is structured,
 please [read the wiki article](http://wiki.cyanogenmod.org/w/Github_Organization)
 
 
+Extra Build Flags
+-----------------
+
+'STRICT_ALIASING' := true "run strict aliasing"
+
+'KRAIT_TUNINGS' := true "run krait optimizations on build-- CPU specific, please verify if you can use this"
+
+'GRAPHITE_OPTS' := true "enable graphite optimisation"
+
+'CLANG_O3' := true "enable o3 at clang"
