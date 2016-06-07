@@ -57,9 +57,8 @@
   
   <!-- OTA -->
   <project path="packages/apps/TOSOTA" name="packages_apps_TOSOTA" remote="tos" />
-  <project path="Documentation" name="Documentation" remote="tos"
+  <project path="Documentation" name="Documentation" remote="tos" />
       <copyfile src="Documentation/ota_conf" dest="ota_conf" />
-  </project>
   
   <!-- END TOS -->
 
