@@ -46,6 +46,8 @@
   <project path="build" name="android_build" groups="pdk" remote="tos" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project path="Documentation" name="Documentation" remote="tos" />
+      <copyfile src="Documentation/ota_conf" dest="ota_conf" />
   <project path="android" name="android" remote="tos" /> 
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="tos" />
   <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="tos" />
