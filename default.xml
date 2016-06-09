@@ -50,6 +50,7 @@
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="tos" />
   <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="tos" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="tos" />
+  <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="tos" />
   <project path="system/core" name="android_system_core" groups="pdk" remote="tos" />
   <project path="tos" name="tos" remote="tos" />
   <project path="vendor/tos" name="android_vendor_tos" remote="tos" />
@@ -240,7 +241,6 @@
   <project path="libnativehelper" name="CyanogenMod/android_libnativehelper" groups="pdk" />
   <project path="packages/apps/AudioFX" name="CyanogenMod/android_packages_apps_AudioFX" />
   <project path="packages/apps/BasicSmsReceiver" name="CyanogenMod/android_packages_apps_BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="omni" />
   <project path="packages/apps/Bluetooth" name="CyanogenMod/android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/BluetoothExt" name="CyanogenMod/android_packages_apps_BluetoothExt" />
   <project path="packages/apps/Browser" name="CyanogenMod/android_packages_apps_Browser" groups="pdk-fs" />
