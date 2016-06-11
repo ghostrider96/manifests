@@ -50,7 +50,6 @@
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="tos" />
   <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="tos" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="tos" />
-  <project path="packages/apps/OmniSwitch" name="android_packages_apps_OmniSwitch" remote="tos" />
   <project path="system/core" name="android_system_core" groups="pdk" remote="tos" />
   <project path="tos" name="tos" remote="tos" />
   <project path="vendor/tos" name="android_vendor_tos" remote="tos" />
