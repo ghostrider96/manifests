@@ -1,27 +1,56 @@
-Typical-OS
+Welcome to Typical-OS
 ===========
-
-
 Getting Started
 ---------------
 
-To get started with Android/Typical-OS, you'll need to get
-familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
+To get started with Typical-OS, you'll need to get familiar with
+[Git and Repo](http://source.android.com/download/using-repo).
 
-To initialize your local repository using the Typical-OS trees, use a command like this:
+Initializing:
 
-    repo init -u git://github.com/Typical-OS/android.git -b tos-mm
+First, create a folder to download typical-os sources: 
 
-Then to sync up:
+	mkdir ~/tos 
 
-    repo sync
+Next, move into that new directory which is created:
 
-Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.org/) for building instructions.
+	cd ~/tos
 
-For more information on this Github Organization and how it is structured, 
-please [read the wiki article](http://wiki.cyanogenmod.org/w/Github_Organization)
+To initialize your local repository using the Typical-OS trees, use this command:
+
+	repo init -u git://github.com/Typical-OS/android.git -b tos-mm
+
+Then sync up with this command:
+
+    repo sync -c -f -j8 --force-sync --no-clone-bundle --no-tags
+	
+ j# depends on your internet speed . 
 
 
+-------------
+ 
+Building TOS
+
+First:
+
+	cd ~/tos
+
+Second:
+
+	. build/envsetup.sh
+
+Third:
+
+	lunch tos_(device)-userdebug
+
+Then use one of these: 
+
+	make -j#  (# is number of jobs)
+
+or:
+
+	mka (if you dont know)
+	
 Extra Build Flags
 -----------------
 
