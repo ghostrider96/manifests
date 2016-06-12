@@ -25,10 +25,9 @@ Then sync up with this command:
     repo sync -c -f -j8 --force-sync --no-clone-bundle --no-tags
 	
 
-
--------------
  
 Building TOS
+----------
 
 First:
 
