@@ -62,7 +62,7 @@
   <project path="packages/apps/TOSOTA" name="packages_apps_TOSOTA" remote="tos" />
   
 <!-- Documentation -->
-  <project path="Documentation" name= "Typical-OS/Documentation" remote="github" revision="tos" >
+  <project path="Documentation" name= "Documentation" remote="tos" >
      <copyfile src="ota_conf" dest="ota_conf" />
   </project>
   
