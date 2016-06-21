@@ -1,63 +1,68 @@
-Welcome to Typical-OS
-===========
+![](http://s21.postimg.org/w9nhupo1j/user4968383_pic43635_1391879040.png)
+
 Getting Started
 ---------------
+In order to build XOSP for your device, first of all you need to get familiar
+with [Git and Repo](http://source.android.com/source/version-control.html).
 
-To get started with Typical-OS, you'll need to get familiar with
-[Git and Repo](http://source.android.com/download/using-repo).
+To initialize your local repository using the XOSP trees, use a command like this:
 
-Initializing:
+    repo init -u git://github.com/XOSP-Project/platform_manifest.git -b xosp-mm
+    
+Then to sync up:
 
-First, create a folder to download typical-os sources: 
+    repo sync --force-sync
 
-	mkdir ~/tos 
+--------
 
-Next, move into that new directory which is created:
+## Building XOSP for your device
 
-	cd ~/tos
+### Build Environment
 
-To initialize your local repository using the Typical-OS trees, use this command:
+- Tested and Working on any version of Ubuntu - 14.04, 14.10, 15.04, 15.10 & 16.04 (64-bit)
+- Any other distribution based of the Ubuntu Distro such as Lubuntu, Xubuntu and etc.
+- A Terminal window
+- A Good specs of hardware like 4 GB of RAM and an Intel I3 dual core
+- A storage unit of any kind (minimum 100 GB). It would be better to use SSD because is more fast during the compliation process
+- Some dependencies that should be installed
 
-	repo init -u git://github.com/Typical-OS/android.git -b tos-mm
+###Building XOSP ROM for your device
+- Preparing Required Binaries and Device Drivers
+- Set CCache for Faster Building (Optional)
+- Build phase
 
-Then sync up with this command:
+###Set CCache
 
-    repo sync -c -f -j8 --force-sync --no-clone-bundle --no-tags
-	
+      $ export USE_CCACHE=1
+      $ prebuilts/misc/linux-x86/ccache/ccache -M 100G
 
- 
-Building TOS
-----------
+Congratulations,the sources are initialized! 
 
-First:
+##### Preparing XOSP for your device
+- To know how to include propietary vendors files from your device, follow this guide which explains everything you need to know: (http://forum.xda-developers.com/showpost.php?p=54118631&postcount=4)
 
-	cd ~/tos
+- Once you finish modifying the vendor files for your device, you will need to add this line into the xosp.mk of your device:
 
-Second:
+      $(call inherit-product, vendor/xosp/config/xosp.mk)
 
-	. build/envsetup.sh
 
-Third:
+##### To build XOSP ROM
 
-	lunch tos_(device)-userdebug
+      $ cd ~/XOSP
+      $ source build/./envsetup.sh
+      $ brunch <device>
 
-Then use one of these: 
+##### Obtaining the zip created from the build process
+To get the zip file that has been built, navigate to the out directory and find for the zip file there. If you found it, then congratulations! If you didn't, try retrying the build process but before doing so, ensure you do the following:
 
-	make -j#  (# is number of jobs)
+      $ cd ~/XOSP
+      $ make clean
 
-or:
+When you done the initialization once you're free to build now without making that again.
 
-	mka (if you dont know)
-	
-Extra Build Flags
------------------
+##### For those who finally get the compilation process done
+Well you made it my friend, after all these hours passed now you finally got the ROM ready to be flashed through the recovery of your device. Share it on XDA or on every forum,blog site etc... (as you wish). 
+We expect you to contribute as well and to give credits to the XOSP Team and their contributors! Don't forget to sync your repo everytime and build XOSP more than just one because the source get changed almost everyday with new fixes or new features. Don't esitate to make pull requests because we will take them all in consideration.
 
-'STRICT_ALIASING' := true "run strict aliasing"
-
-'KRAIT_TUNINGS' := true "run krait optimizations on build-- CPU specific, please verify if you can use this"
-
-'GRAPHITE_OPTS' := true "enable graphite optimisation"
-
-'CLANG_O3' := true "enable o3 at clang"
-
--------------
+#### Don't know what XOSPApps are?
+If you don't know what XOSPApps are take a look over here: https://github.com/XOSP-Project/xosp_apps
