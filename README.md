@@ -13,7 +13,7 @@ Initializing Repository
 
 Initiate core trees without any device/kernel/vendor:
 
-    $ repo init -u https://github.com/AOKP/platform_manifest.git -b mm
+    $ repo init -u https://github.com/ghostrider96/manifests.git -b aokp-mm
 
 Sync the repository:
 
