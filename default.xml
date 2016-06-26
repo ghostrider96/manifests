@@ -8,6 +8,15 @@
            fetch="https://github.com/AOSPA"
            review="http://gerrit.aospa.co"
            revision="marshmallow-caf" />
+		   
+  <remote  name="aosparadox"
+           fetch="https://github.com/AOSParadox" />
+		   
+  <remote  name="cyanogenmod"
+           fetch="https://github.com/CyanogenMod" />
+		   
+  <remote  name="ubertc"
+           fetch="https://bitbucket.org/UBERTC/" />
 
   <remote  name="caf"
            fetch="git://codeaurora.org/"
