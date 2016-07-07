@@ -10,7 +10,7 @@
   <remote  name="ubertc"
            fetch="https://bitbucket.org/UBERTC/" />
 
-  <default revision="refs/tags/android-6.0.1_r46"
+  <default revision="refs/tags/android-6.0.1_r52"
            remote="aosp"
            sync-j="4" />
 
