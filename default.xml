@@ -82,6 +82,7 @@
   <project path="system/netd" name="system_netd" groups="pdk" remote="vanir" />
   <project path="system/vold" name="system_vold" groups="pdk" remote="vanir"  />
   <project path="system/extras/su" name="system_extras_su" remote="vanir" />
+  <project path="vendor/vanir" name="vendor_vanir" remote="vanir" groups="vendor" />
 
   <!-- android-6.0.1_r21 - forked from cm -->
   <project path="development" name="development" groups="pdk-cw-fs,pdk-fs" remote="vanir" />
